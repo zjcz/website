@@ -1,8 +1,495 @@
-<html>
-    <head>
-        <title>First Cut</title>
-    </head>
-    <Body>
-        Hello World
-    </Body>
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Jon Clarke | Software Developer">
+    <meta name="description" content="Personal website by Jon Clarke, contain profile and portfolio information">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/bulma-0.9.3/bulma.min.css" />
+
+    <title>Jon Clarke | Software Developer</title>
+  </head>
+  <body>      
+    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+
+        <a class="navbar-item" href="#">
+          <img src="/favicon-32x32.png" alt="JC logo" width="32" height="32">
+        </a>
+
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarMain" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#aboutme">
+            About Me
+          </a>
+          <a class="navbar-item" href="#experience">
+            Experience
+          </a>
+          <a class="navbar-item" href="#skills">
+            Skills
+          </a>
+          <a class="navbar-item" href="#highlights">
+            Highlights
+          </a>
+          <a class="navbar-item" href="#portfolio">
+            Portfolio
+          </a>     
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button is-info" href="https://www.github.com/zjcz/" target="_blank" rel="noopener">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-info" href="https://www.linkedin.com/in/jon-clarke-leeds/" target="_blank" rel="noopener">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>LinkedIn</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="hero is-info is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <article class="media">
+            <div class="media-content">
+              <div class="content">
+                <p class="title">
+                  Jon Clarke
+                </p>
+                <p class="subtitle">
+                  Software Developer - Java | C# | Javascript | SQL
+                </p>
+              </div>
+            </div>
+            <div class="media-left">
+              <figure class="image is-square is-128x128">
+                <img src="/assets/images/me.jpg" alt="Image of Jon Clarke" class="is-rounded">
+              </figure>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <a class="heading-anchor" name="aboutme"></a>
+        <h1 class="title">About Me</h1>
+        
+        <div class="block">      
+          I am a multi-disciplined software developer with over 20 years' experience building solutions for web, desktop and mobile. Currently working with Java and SQL Server, I have previously used .Net for much of my career. I am happy to tackle new technologies to deliver the best solution. I am self-motivated and disciplined, at home working either on my own or as a member of a team. I have experience of cloud technologies with Azure, front end development with HTML, CSS and JavaScript, and mobile development with Android and Windows Mobile.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <a class="heading-anchor" name="experience"></a>
+        <h1 class="title">Experience</h1>
+
+        <div class="box">
+          <h5 class="title is-5">Liquidlogic</h5> 
+          <h5 class="subtitle is-5">Java Developer - Oct 2018 to now</h5>
+
+          <div class="block">    
+            Working as a Java developer in an agile environment on a variety of applications including web-based applications used both internally by our clients and by members of the public (including front and back end development), Mobile applications and tools used internally by the business (including Jira add-ons and connecting internal apps to Jira via REST APIs).
+          </div>
+
+          <span class="tag is-dark">Java 8</span>
+          <span class="tag is-dark">SQL Server</span>
+          <span class="tag is-dark">jQuery</span>
+          <span class="tag is-dark">Bootstrap</span>
+          <span class="tag is-dark">Apache Velocity</span>
+          <span class="tag is-dark">UWP</span>
+          <span class="tag is-dark">C# .Net</span>
+          <span class="tag is-dark">Android SDK</span>
+          <span class="tag is-dark">Jira SDK</span>
+
+          <span class="tag is-dark">Subversion</span>
+          <span class="tag is-dark">Jira</span>
+          <span class="tag is-dark">Teamcity</span>
+          <span class="tag is-dark">Intellij</span>
+          <span class="tag is-dark">Visual Studio 2019</span>
+          <span class="tag is-dark">Android Studio</span>
+          <span class="tag is-dark">APIs</span>
+        </div>
+          
+        <div class="box">
+          <h5 class="title is-5">Search Laboratory</h5> 
+          <h5 class="subtitle is-5">Software Developer - Sept 2015 to Oct 2018</h5>
+          <div class="block">    
+            Software developer working on internal systems for use by all areas of the business, including SEO, PPC and accounting. Also work on software for use by clients. Development is normally in C# and MVC, using Azure webjobs for background processing and SQL Server, Google BigQuery or Azure Storage tables for storing data. Working with a number of APIs to access services, including Google Adwords, Google Analytics, Google Search Console, Doubleclick, Moz, AWR and SEMRush. Also involved in a number of regular meetings to discuss requirements and development progression. Promoted to Senior Developer in Dec 2017.
+          </div>
+
+          <span class="tag is-dark">C#</span>
+          <span class="tag is-dark">VB.Net</span>
+          <span class="tag is-dark">ASP.Net</span>
+          <span class="tag is-dark">MVC</span>
+          <span class="tag is-dark">.Net Framework</span>
+          <span class="tag is-dark">SQL Server</span>
+          <span class="tag is-dark">jQuery</span>
+          <span class="tag is-dark">Bootstrap</span>
+
+          <span class="tag is-dark">Git</span>
+          <span class="tag is-dark">Azure</span>
+          <span class="tag is-dark">Azure Dev Ops</span>
+          <span class="tag is-dark">Visual Studio</span>
+
+          <span class="tag is-dark">Microservices</span>
+          <span class="tag is-dark">APIs</span>
+        </div>
+
+        <div class="box">
+          <h5 class="title is-5">Happy Bunny Software Ltd</h5> 
+          <h5 class="subtitle is-5">Software Developer - Oct 2004 to Sept 2015</h5>
+
+          <div class="block">    
+            Self employed developer working with a variety of companies to develop custom web and desktop solutions based on their requirements.
+          </div>
+
+          <span class="tag is-dark">C#</span>
+          <span class="tag is-dark">VB.Net</span>
+          <span class="tag is-dark">ASP.Net</span>
+          <span class="tag is-dark">MVC</span>
+          <span class="tag is-dark">.Net Framework</span>
+          <span class="tag is-dark">SQL Server</span>
+          <span class="tag is-dark">jQuery</span>
+          <span class="tag is-dark">Bootstrap</span>
+          <span class="tag is-dark">Java</span>
+          <span class="tag is-dark">Sourcesafe</span>
+          <span class="tag is-dark">Visual Studio</span>
+        </div>
+
+        <div class="box">
+          <h5 class="title is-5">BCS Ltd</h5> 
+          <h5 class="subtitle is-5">Software Developer - Mar 2003 to Sept 2004</h5>
+
+          <div class="block">    
+            Software developer in the development department of BCS Limited, a business systems provider to a number of large companies in the north, including The Rugby Football League, Keycare, Ventura, Bodycare, Richmond Ice Creams and Northern Life Care.
+          </div>
+
+          <span class="tag is-dark">C#</span>
+          <span class="tag is-dark">ASP.Net</span>
+          <span class="tag is-dark">.Net Framework</span>
+          <span class="tag is-dark">SQL Server</span>
+          <span class="tag is-dark">Sourcesafe</span>
+          <span class="tag is-dark">Sage SDK</span>
+          <span class="tag is-dark">SAP Business One SDK</span>
+        </div>
+
+        <div class="box">
+          <h5 class="title is-5">Tribal Data Solutions</h5>
+          <h5 class="subtitle is-5">Software Developer - Jul 1998 to Feb 2003</h5>
+
+          <div class="block">    
+            Working as a Software Developer for Tribal Data Solutions Ltd, a bespoke software house based in Leeds. I completed work on projects for a number of large companies including Hays Logistics, Abbey National, BOC, Rank Leisure, NG Bailey and TNT.
+          </div>
+
+          <span class="tag is-dark">VB6</span>
+          <span class="tag is-dark">ASP</span>
+          <span class="tag is-dark">SQL Server</span>
+          <span class="tag is-dark">Oracle</span>
+          <span class="tag is-dark">Sourcesafe</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <a class="heading-anchor" name="skills"></a>
+        <h1 class="title">Skills</h1> 
+        <h5 class="title is-5">Languages</h5>
+        <div class="columns is-multiline">
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">.Net (18 Years)</h5>
+              <div class="block">    
+                .Net Framework, mainly C# but some VB.Net.  Using ASP.Net, MVC, Entity Framework, Nuget, etc     
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Java (4 Years)</h5>
+              <div class="block">    
+                Working with core Java 8
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">SQL Server (20+ Years)</h5>
+              <div class="block">    
+                SQL queries, database design (tables, indexes and stored procedures) and maintenance plans
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Javascript</h5>
+              <div class="block">    
+                Basic-to-medium DOM based javascript
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="title is-5">Frameworks and Libraries</h5>
+        <div class="columns is-multiline">
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Bootstrap (4 Years)</h5>
+              <div class="block">    
+                
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">jQuery (6 Years)</h5>
+              <div class="block">    
+                Including jQuery-UI and jQuery validation
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Android SDK (6 Months)</h5>
+              <div class="block">    
+                Maintenance and bug fixes of an existing app
+              </div>
+            </div>
+          </div> 
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Jira SDK (6 Months)</h5>
+              <div class="block">    
+                Jira onprem plugin development and maintenance
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="title is-5">Tools</h5>
+        <div class="columns is-multiline">
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Git (2 Years)</h5>
+              <div class="block">    
+                Basic-to-medium usage (branching, merge, pull requests)
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Azure (2 Years)</h5>
+              <div class="block">    
+                Hosted Webapps, VM, SQL Server, Webjobs, message queues and Azure Devops
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">APIs (10 Years)</h5>
+              <div class="block">    
+                Working with SOAP and REST APIs, both consuming and developing
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">IDEs</h5>
+              <div class="block">    
+                Intellij, Visual Studio, Android Studio, VS Code
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Subversion (3 Years)</h5>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Teamcity (3 Years)</h5>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">Jira (3 Years)</h5>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-info is-light">
+              <h5 class="title is-5">BigQuery (6 Months)</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <section class="section">
+      <div class="container">
+        <a class="heading-anchor" name="highlights"></a>
+        <h1 class="title">Highlights</h1>
+
+        <div class="columns is-multiline">
+          <div class="column is-one-quarter">
+            <div class="notification is-primary is-light">
+              <h5 class="title is-5">Star Of the Month</h5>
+              <h5 class="subtitle is-5">Liquidlogic - Mar 2021</h5>
+              <div class="block">    
+                Awarded for putting in extra work to ensure a new release went smoothly
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-primary is-light">
+              <h5 class="title is-5">Android Project</h5>
+              <h5 class="subtitle is-5">LiquidLogic - Mar 2019</h5>
+              <div class="block">    
+                Took over and fixed a number of issues in an existing Android application
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-primary is-light">
+              <h5 class="title is-5">Jira Plugins</h5>
+              <h5 class="subtitle is-5">LiquidLogic</h5>
+              <div class="block">    
+                Developed a number of Jira plugins for use inhouse by the company
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-primary is-light">
+              <h5 class="title is-5">You've been mugged</h5>
+              <h5 class="subtitle is-5">Liquidlogic - Jul 2019</h5>
+              <div class="block">    
+                Awarded for going the extra mile. <a href="https://twitter.com/liquidlogicuk/status/1148595314871406593" target="_blank">Twitter</a> (I'm the one hiding)
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-primary is-light">
+              <h5 class="title is-5">Google BigQuery Blog</h5>
+              <h5 class="subtitle is-5">Search Laboratory - Jan 2017</h5>
+              <div class="block">    
+                Blog post published around a project I completed in Google Bigquery: <a href="https://www.searchlaboratory.com/2017/01/building-an-attribution-model-with-google-analytics-and-bigquery/" target="_blank">Building an Attribution Model with Google Analytics and BigQuery</a>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="notification is-primary is-light">
+              <h5 class="title is-5">Altruism Award 2016</h5>
+              <h5 class="subtitle is-5">Search Laboratory - Dec 2016</h5>
+              <div class="block">    
+                Awarded for going the extra mile
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <section class="section">
+      <div class="container">
+        <a class="heading-anchor" name="portfolio"></a>
+        <h1 class="title">Portfolio</h1>
+        <div class="block">    
+          Coming Soon...
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Developed by Jon Clarke using HTML, <a href="https://bulma.io/" target="_blank">Bulma css</a> and vanilla Javascript.
+        </p>
+      </div>
+    </footer>
+    </div>      
+  </body>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initNavbarBurger();
+    });
+
+      
+    function initNavbarBurger() {
+      let isEventSet = false;
+      // Get all "navbar-burger" elements
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if (navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const targetName = el.dataset.target;
+            const target = document.getElementById(targetName);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            target.classList.toggle('is-active');
+
+            if (!isEventSet) {
+              initNavbarCloseEvent(el, target);
+              isEventSet = true;
+            }
+          });
+        });
+      }
+    }
+
+    function initNavbarCloseEvent(navBurger, navContainer) {
+      // Get all "navbar-item" elements for this container
+      const navbarItems = navContainer.querySelectorAll('.navbar-item');
+
+      // Check if there are any navbar items
+      if (navbarItems && navbarItems.length > 0) {
+        // Add a click event on each of them
+        navbarItems.forEach( el => {
+          el.addEventListener('click', () => {
+            // De-activate the active class on the parent burger menu
+            navBurger.classList.toggle('is-active');
+            navContainer.classList.toggle('is-active');
+          });
+        });
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/f4f27767b5.js" crossorigin="anonymous"></script>
 </html>
