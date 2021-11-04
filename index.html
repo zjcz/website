@@ -26,7 +26,7 @@
         </a>
 
     
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -421,37 +421,23 @@
 
       
     function initNavbarBurger() {
-      let isEventSet = false;
-      // Get all "navbar-burger" elements
-      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Get the "navbar-burger" element
+      const navbarBurger = document.getElementById('navbar-burger');
 
-      // Check if there are any navbar burgers
-      if (navbarBurgers.length > 0) {
+      // Get the main navbar item          
+      const navBarContainer = document.getElementById("navbarMain");
 
-        // Add a click event on each of them
-        navbarBurgers.forEach( el => {
-          el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const targetName = el.dataset.target;
-            const target = document.getElementById(targetName);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            target.classList.toggle('is-active');
-
-            if (!isEventSet) {
-              initNavbarCloseEvent(el, target);
-              isEventSet = true;
-            }
-          });
+      if (navbarBurger && navBarContainer) {
+        // Add a click event to show the contents of the navbar when the burger menu is clicked
+        navbarBurger.addEventListener('click', () => {
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          navbarBurger.classList.toggle('is-active');
+          navBarContainer.classList.toggle('is-active');          
         });
       }
-    }
 
-    function initNavbarCloseEvent(navBurger, navContainer) {
-      // Get all "navbar-item" elements for this container
-      const navbarItems = navContainer.querySelectorAll('.navbar-item');
+      // Get all "navbar-item" elements
+      const navbarItems = navBarContainer.querySelectorAll('.navbar-item');
 
       // Check if there are any navbar items
       if (navbarItems && navbarItems.length > 0) {
@@ -459,12 +445,13 @@
         navbarItems.forEach( el => {
           el.addEventListener('click', () => {
             // De-activate the active class on the parent burger menu
-            navBurger.classList.toggle('is-active');
-            navContainer.classList.toggle('is-active');
+            navbarBurger.classList.toggle('is-active');
+            navBarContainer.classList.toggle('is-active');
           });
         });
       }
     }
+
   </script>
   <script src="https://kit.fontawesome.com/f4f27767b5.js" crossorigin="anonymous"></script>
 </html>
